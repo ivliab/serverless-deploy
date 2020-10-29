@@ -13,7 +13,7 @@ if not stage or not region:
 if not workdir:
     workdir = "."
 
-print ("Deploying {}/{}".format(stage, region))
+print ("Deploying {}/{} from {}".format(stage, region, workdir))
 
 subprocess.run(
     ['npm', 'ci'],
