@@ -1,3 +1,5 @@
+name: 'serverless-deploy'
+description: 'Deploy Serverless python 3.8'
 inputs:
   stage:
     description: 'the stage to deploy'
