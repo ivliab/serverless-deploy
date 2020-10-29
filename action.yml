@@ -1,0 +1,17 @@
+inputs:
+  stage:
+    description: 'the stage to deploy'
+    required: true
+  region:
+    description: 'the region to deploy'
+    required: true
+  workdir:
+    description: 'the serverless workdir'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.stage }}
+    - ${{ inputs.region }}
+    - ${{ inputs.workdir }}
