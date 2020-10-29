@@ -30,7 +30,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: ivliab/serverless-deploy@v3
+      - uses: ivliab/serverless-deploy@v1
         with:
           stage: ${{ matrix.stage }}
           region: ${{ matrix.regions }}
