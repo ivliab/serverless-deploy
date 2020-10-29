@@ -12,7 +12,7 @@ inputs:
     required: true
 runs:
   using: 'docker'
-  image: 'docker://ivarmedi/serverless-python-38:latest'
+  image: 'docker://ivliab/serverless-python-38:latest'
   args:
     - ${{ inputs.stage }}
     - ${{ inputs.region }}
